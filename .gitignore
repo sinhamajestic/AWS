@@ -1,0 +1,95 @@
+--- Python ---
+
+Virtual Environment
+
+.venv/
+venv/
+pycache/
+*.py[cod]
+*$py.class
+
+Python requirements
+
+We are manually bundling these, so we don't need to commit them.
+
+If you stop manual bundling, you might want to remove these lines.
+
+src-lambda-code/api/boto3/
+src-lambda-code/api/botocore/
+src-lambda-code/api/fastapi/
+src-lambda-code/api/langchain/
+src-lambda-code/api/mangum/
+src-lambda-code/api/opensearchpy/
+
+(Add other manually installed lib folders here)
+
+Renamed requirements file
+
+*.bak
+
+--- Node.js / AWS CDK / React (Vite) ---
+
+Dependency directories
+
+node_modules/
+cdk.out/
+
+React frontend build output
+
+dist/
+
+Log files
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+Local environment variables
+
+This file contains your API keys and secrets!
+
+DO NOT commit this.
+
+.env.local
+.env.*.local
+.env
+
+--- Operating System Files ---
+
+macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Windows
+
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+--- IDEs / Editors ---
+
+VSCode
+
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+JetBrains (PyCharm, WebStorm, etc.)
+
+.idea/
+
+--- Other ---
+
+Log files
+
+*.log
+logs/
+*.logs
